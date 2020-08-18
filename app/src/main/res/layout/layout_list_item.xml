@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@drawable/border"
+    android:layout_marginBottom="20dp">
+
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/btnEdit"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:layout_toLeftOf="@id/btnDelete"
+            android:src="@drawable/edit"
+            android:background="@drawable/line"/>
+
+        <ImageView
+            android:background="@drawable/line"
+            android:id="@+id/btnDelete"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/delete" />
+
+        <TextView
+            android:id="@+id/txtDate"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:textSize="15sp"
+            android:layout_toLeftOf="@id/btnEdit"
+            android:gravity="top|left"
+            android:text="date"
+            android:textColor="#E91E63"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black"/>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/txtMemo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#E91E63"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+</LinearLayout>
