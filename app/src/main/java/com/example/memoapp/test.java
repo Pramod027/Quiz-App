@@ -1,1 +1,1 @@
-New content added to test
+Public access restricted
